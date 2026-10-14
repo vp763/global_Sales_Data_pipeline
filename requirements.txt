@@ -1,0 +1,18 @@
+# --- Core Data Engineering ---
+requests
+pyspark==3.5.1
+pyarrow
+delta-spark
+
+# --- Database & Connectors ---
+pymysql
+
+# --- Core Data Science & ML ---
+numpy
+pandas
+scikit-learn
+xgboost
+
+# --- Visualization ---
+matplotlib
+seaborn

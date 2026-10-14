@@ -1,0 +1,6 @@
+customer_id,customer_name,country,customer_tier,signup_date,risk_score
+CUST_01,Aarav Patel,India,Platinum,2023-01-15,0.02
+CUST_02,John Smith,USA,Gold,2023-06-20,0.05
+CUST_03,Emma Dubois,France,Silver,2024-02-10,0.12
+CUST_04,Liam Brown,UK,Platinum,2022-11-05,0.01
+CUST_05,Sophia Muller,Germany,Bronze,2024-08-01,0.25
