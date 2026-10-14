@@ -1,10 +1,10 @@
-# 🌍 Global Multi-Source Sales Analytics Pipeline (Airflow + PySpark + Medallion Architecture)
+# Global Multi-Source Sales Analytics Pipeline (Airflow + PySpark + Medallion Architecture)
 
 An end-to-end data engineering pipeline orchestrated using **Dockerized Apache Airflow** and processed at scale with **PySpark**. It ingests data from multiple transactional and analytical systems, runs transformations through a **Medallion Architecture (Bronze ➡️ Silver ➡️ Gold)**, and models the final output into an enterprise-ready **Star Schema** formatted for Cloud Data Warehouses (e.g., Microsoft Fabric, Snowflake, BigQuery).
 
 ---
 
-## 🏗️ Architecture & Data Flow
+## Architecture & Data Flow
 
 - **Source Ingestion (Bronze Layer):**
   - **PostgreSQL (OLTP):** Live customer orders database.
@@ -23,7 +23,7 @@ An end-to-end data engineering pipeline orchestrated using **Dockerized Apache A
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 global_sales/
@@ -46,7 +46,7 @@ global_sales/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Orchestrator:** Apache Airflow 2.10.2
 - **Processing Engine:** Apache Spark (PySpark 3.5.1) with OpenJDK 17
@@ -56,7 +56,7 @@ global_sales/
 
 ---
 
-## 🚀 Setup & Execution Guide
+## Setup & Execution Guide
 
 ### 1. Configure Environment Variables
 Create a `.env` file in the `global_sales` directory:
@@ -109,7 +109,7 @@ ON CONFLICT (order_id) DO NOTHING;
 
 ---
 
-## 📊 Pipeline Output Verification
+## Pipeline Output Verification
 
 After task completion, check the partitioned parquet storage:
 - **Bronze Zone:** `data/global_sales/bronze/`
